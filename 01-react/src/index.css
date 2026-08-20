@@ -7,4 +7,6 @@
 body {
   margin: 0;
   font: 16px/1.45 system-ui, sans-serif;
+  color: #1a1d24;
+  background: #eef0f4;
 }
