@@ -18,12 +18,12 @@
 
 ## Трек 1b (после ядра)
 
-9. [Tailwind](tailwind.md)
-10. [Error Boundary / Suspense](error-boundary-suspense.md)
-11. [Recharts](recharts.md)
-12. [WebSocket](websocket.md)
-13. [RBAC UI](rbac-ui.md)
-14. [Storybook](storybook.md)
-15. [Тесты на собесе](interview-tests.md) — без кода в репо
+10. [Tailwind](tailwind.md)
+11. [Error Boundary / Suspense](error-boundary-suspense.md)
+12. [Recharts](recharts.md)
+13. [WebSocket](websocket.md)
+14. [RBAC UI](rbac-ui.md)
+15. [Storybook](storybook.md)
+16. [Тесты на собесе](interview-tests.md) — без кода в репо
 
 React как библиотека — [plan](../plan.md) и [gotchas](../gotchas/). Финтех-план — [plan-fintech](../plan-fintech.md). Next — [`../../02-next/wiki/tools/`](../../02-next/wiki/tools/).
