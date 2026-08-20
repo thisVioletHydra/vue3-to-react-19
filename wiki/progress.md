@@ -41,12 +41,19 @@
 
 - [ ] [vite](tools/vite.md)
 - [ ] [oxlint](tools/oxlint.md)
+- [ ] [format / oxfmt](tools/format.md)
 - [ ] [react-router](tools/react-router.md)
 - [ ] [zustand](tools/zustand.md)
 - [ ] [tanstack-query](tools/tanstack-query.md)
 - [ ] [react-hook-form](tools/react-hook-form.md)
 - [ ] [zod](tools/zod.md)
 - [ ] [css-modules](tools/css-modules.md)
+
+---
+
+## Чеклисты смен
+
+- [ ] [День 1 руками](checklists/day-01.md) + [гайд миграции](migrate/day-01.md)
 
 ---
 

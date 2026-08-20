@@ -55,13 +55,16 @@
 
 ## День 1. Рендер, JSX, стейт
 
-Тулза: ещё только [Vite](tools/vite.md) и [oxlint](tools/oxlint.md).
+Сначала прочитай гайд и чеклист — не мой коммит:
+
+- [migrate/day-01.md](migrate/day-01.md) — Vue рядом с React
+- [checklists/day-01.md](checklists/day-01.md) — задания руками
+
+Тулзы: [Vite](tools/vite.md), [oxlint](tools/oxlint.md), [format / oxfmt](tools/format.md).
 
 Готчи: [ребёнок не return](gotchas/child-no-return.md), [controlled input](gotchas/controlled-input.md), [key](gotchas/key-identity.md), [useRef](gotchas/useref-no-rerender.md).
 
-Сетка карточек, мок-массив, поиск в `useState` родителя, добавление колбэком. Без `useEffect`.
-
-Чек: мутация на месте молчит — чинишь setter. Колбэк вверх без `useImperativeHandle`.
+В репо уже скелет каталога. Ты его **ломаешь и чинишь** по чеклисту. Я не сдаю день за тебя.
 
 ---
 

@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import type { Product } from '../data/mockProducts';
+import { useState } from "react";
+import type { Product } from "../data/mockProducts";
 
 type AddProductFormProps = {
-  onAdd: (product: Omit<Product, 'id'>) => void;
+  onAdd: (product: Omit<Product, "id">) => void;
 };
 
 export function AddProductForm({ onAdd }: AddProductFormProps) {
-  const [title, setTitle] = useState('');
-  const [price, setPrice] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState("");
+  const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     <form
@@ -16,7 +16,7 @@ export function AddProductForm({ onAdd }: AddProductFormProps) {
         event.preventDefault();
 
         const parsedPrice = Number(price);
-        if (title === '' || Number.isNaN(parsedPrice)) {
+        if (title === "" || Number.isNaN(parsedPrice)) {
           return;
         }
 
@@ -26,9 +26,9 @@ export function AddProductForm({ onAdd }: AddProductFormProps) {
           description,
         });
 
-        setTitle('');
-        setPrice('');
-        setDescription('');
+        setTitle("");
+        setPrice("");
+        setDescription("");
       }}
     >
       <h2>Добавить позицию</h2>

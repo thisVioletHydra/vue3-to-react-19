@@ -8,12 +8,13 @@
 
 1. [Vite](vite.md)
 2. [oxlint](oxlint.md)
-3. [React Router](react-router.md)
-4. [Zustand](zustand.md)
-5. [TanStack Query](tanstack-query.md)
-6. [React Hook Form](react-hook-form.md)
-7. [Zod](zod.md)
-8. [CSS Modules](css-modules.md)
+3. [Форматирование / oxfmt](format.md)
+4. [React Router](react-router.md)
+5. [Zustand](zustand.md)
+6. [TanStack Query](tanstack-query.md)
+7. [React Hook Form](react-hook-form.md)
+8. [Zod](zod.md)
+9. [CSS Modules](css-modules.md)
 
 ## Трек 1b (после ядра)
 

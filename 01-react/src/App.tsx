@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import { AddProductForm } from './components/AddProductForm';
-import { ProductCard } from './components/ProductCard';
-import { SearchField } from './components/SearchField';
-import { MOCK_PRODUCTS, type Product } from './data/mockProducts';
-import styles from './App.module.css';
+import { useState } from "react";
+import { AddProductForm } from "./components/AddProductForm";
+import { ProductCard } from "./components/ProductCard";
+import { SearchField } from "./components/SearchField";
+import { MOCK_PRODUCTS, type Product } from "./data/mockProducts";
+import styles from "./App.module.css";
 
 function createId(): string {
   return `p-${Date.now()}-${Math.random().toString(16).slice(2, 8)}`;
@@ -11,12 +11,12 @@ function createId(): string {
 
 function App() {
   const [products, setProducts] = useState<Product[]>(MOCK_PRODUCTS);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
 
   const normalizedQuery = query.trim().toLowerCase();
   const visibleProducts =
-    normalizedQuery === ''
+    normalizedQuery === ""
       ? products
       : products.filter((product) => {
           return product.title.toLowerCase().includes(normalizedQuery);

@@ -7,27 +7,27 @@ export type Product = {
 
 export const MOCK_PRODUCTS: Product[] = [
   {
-    id: 'p1',
-    title: 'ЦФА на депозит',
+    id: "p1",
+    title: "ЦФА на депозит",
     price: 100_000,
-    description: 'Номинал 100к, срок 12 мес',
+    description: "Номинал 100к, срок 12 мес",
   },
   {
-    id: 'p2',
-    title: 'Стейблкоин эмитента А',
+    id: "p2",
+    title: "Стейблкоин эмитента А",
     price: 1,
-    description: '1:1 к рублю, proof-of-reserves',
+    description: "1:1 к рублю, proof-of-reserves",
   },
   {
-    id: 'p3',
-    title: 'Оферта брокера',
+    id: "p3",
+    title: "Оферта брокера",
     price: 50_000,
-    description: 'Минимальный лот для инвестора',
+    description: "Минимальный лот для инвестора",
   },
   {
-    id: 'p4',
-    title: 'Compliance пакет',
+    id: "p4",
+    title: "Compliance пакет",
     price: 0,
-    description: 'KYB/KYC шаблоны для онбординга',
+    description: "KYB/KYC шаблоны для онбординга",
   },
 ];
