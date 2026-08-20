@@ -17,7 +17,7 @@
 
 ## Шаги
 
-1. День 3: `npm install @tanstack/react-query`.
+1. День 3: `pnpm add @tanstack/react-query`.
 2. `QueryClient` + провайдер в `main` / `app`.
 3. Список и деталка на `useQuery` с общим префиксом ключа.
 4. Create через `useMutation`, после успеха инвалидация списка. Две страницы не бьют API дважды на один ключ — чек.

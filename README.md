@@ -16,8 +16,8 @@
 
 ```bash
 cd 01-react
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Дальше — [`wiki/progress.md`](wiki/progress.md). В чате: «го» / «день 1» / «смена A».

@@ -1,7 +1,8 @@
-# Vue 3 → React 19. Каталог
+# 01-react
 
-Код SPA. Документация — [`../wiki/`](../wiki/).
+Код каталога. Документация — [`../wiki/`](../wiki/). Пакетный менеджер — **pnpm** (не npm).
 
 ```bash
-npm run dev
+pnpm install
+pnpm dev
 ```

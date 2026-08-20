@@ -25,7 +25,7 @@ type ItemDraft = z.infer<typeof itemSchema>;
 
 ## Шаги
 
-1. День 4: `npm install zod @hookform/resolvers`.
+1. День 4: `pnpm add zod @hookform/resolvers`.
 2. Схема create/edit рядом с формой, не в компоненте размазанная.
 3. Невалидный submit — ошибки из схемы под полями, запрос не уходит.
 4. После успеха в мутацию уходит уже узкий тип, не `string | undefined` с формы.

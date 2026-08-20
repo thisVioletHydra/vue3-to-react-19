@@ -33,7 +33,7 @@ if (query !== '') {
 
 ## Шаги
 
-1. Открыть `01-react/.oxlintrc.json` — есть `strict-boolean-expressions`. Скрипт `npm run lint` с `--type-aware`.
+1. Открыть `01-react/.oxlintrc.json` — есть `strict-boolean-expressions`. Скрипт `pnpm lint` с `--type-aware`.
 2. Намеренно написать `if (!maybeNode)` где `maybeNode` это `Element | null`, сохранить.
 3. Увидеть ошибку линтера. Заменить на `maybeNode !== null`.
-4. `cd 01-react && npm run lint` — когда захочешь сам, в курсе за тебя не гоняем.
+4. `cd 01-react && pnpm lint` — когда захочешь сам, в курсе за тебя не гоняем.

@@ -12,7 +12,7 @@
 
 ## Как надо
 
-Vite+React Storybook. Сторисы на Card / TableRow / Chart с controls. Demo-маршрут в приложении тоже ок. В README — как поднять `npm run storybook`.
+Vite+React Storybook. Сторисы на Card / TableRow / Chart с controls. Demo-маршрут в приложении тоже ок. В README — как поднять `pnpm storybook`.
 
 ## Шаги
 
