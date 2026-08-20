@@ -2,15 +2,19 @@
 
 Не учебник фронта. HTML, CSS, JS, TypeScript с нуля не входят. Только дельта Vue 3 Composition → React 19.
 
-Стек: **Vite + React 19 + TypeScript + React Router + Zustand + TanStack Query + React Hook Form + Zod**. Redux нет. Вёрстка — CSS Modules, сам.
+Стек ядра: **Vite + React 19 + TypeScript + React Router + Zustand + TanStack Query + React Hook Form + Zod**. Redux нет.
 
-Один проект на все дни: **каталог + фильтры в URL + пагинация + деталка + форма create/edit**.
+Вёрстка: день 1–4 можно CSS Modules; **с капстоуна и трека 1b — Tailwind** ([tools/tailwind.md](tools/tailwind.md)). Не тащим Ant/MUI целиком.
 
-Когда Vue-привычка врёт — [gotchas/](gotchas/). Когда дошла новая либа — [tools/](tools/). Прогресс тикается в [progress.md](progress.md): за вечер можно закрыть пять тем, Zustand жевать отдельно.
+Один проект на все дни в `01-react/`. Сначала каталог (фильтры в URL, пагинация, деталка, create/edit). После ядра — [трек 1b](plan-fintech.md): admin console под Vite-финтех вакансии (роли, chart, WS, Storybook).
 
-Код: `01-react/`. Старт: `npm run dev`. В чате «го», не всё сразу.
+Как учимся: чат «го» → код → wiki → пуш в репо после дня/темы. Демо-пет = этот репо, не зоопарк.
 
-Next — [`../02-next/wiki/`](../02-next/wiki/). Не открываем, пока в progress не закрыт блок «модель рендера + данные вверх».
+Когда Vue-привычка врёт — [gotchas/](gotchas/). Тулзы — [tools/](tools/). Прогресс — [progress.md](progress.md).
+
+Карта вакансии ЦФА: [vacancies/cfa-admin-console.md](vacancies/cfa-admin-console.md).
+
+**Next не гейт для Vite-финтех.** Трек [`../02-next/wiki/`](../02-next/wiki/) — опционально после ядра+1b, под другие вакансии. Ядро закрыто = можно идти в 1b, не обязательно в Next.
 
 ---
 
@@ -85,7 +89,7 @@ Next — [`../02-next/wiki/`](../02-next/wiki/). Не открываем, пок
 
 ## День 4. Формы + FSD
 
-Тулзы: [react-hook-form](tools/react-hook-form.md), [zod](tools/zod.md), [css-modules](tools/css-modules.md).
+Тулзы: [react-hook-form](tools/react-hook-form.md), [zod](tools/zod.md), [css-modules](tools/css-modules.md) (если ещё без Tailwind).
 
 Готчи: [проп в useState](gotchas/props-to-usestate.md), форма не через ref — снова [child-no-return](gotchas/child-no-return.md).
 
@@ -93,8 +97,10 @@ Next — [`../02-next/wiki/`](../02-next/wiki/). Не открываем, пок
 
 ---
 
-## День 5. Капстоун
+## День 5. Капстоун ядра
 
-Дожать пагинацию, пустое/ошибка/лоадер. README стеком вакансии.
+Дожать пагинацию, пустое/ошибка/лоадер. Можно начать Tailwind на новых экранах.
 
-Выход на Next — чек в [progress.md](progress.md), блок «ядро».
+**Дальше не Next по умолчанию** — [трек 1b финтех](plan-fintech.md): admin console, charts, WS, RBAC, Storybook. Next — когда ядро+1b закрыты и вакансия про App Router.
+
+Выход из ядра — чек в [progress.md](progress.md), блок «Ядро».

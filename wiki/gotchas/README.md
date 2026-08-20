@@ -2,7 +2,9 @@
 
 По файлу на дыру. Формат: проблема / как не делать / как надо.
 
-Читать не все сразу — по теме из [plan.md](../plan.md). Закрыл — тик в [progress.md](../progress.md).
+Читать по теме из [plan.md](../plan.md) / [plan-fintech.md](../plan-fintech.md). Закрыл — тик в [progress.md](../progress.md).
+
+## Ядро
 
 - [Ребёнок не возвращает данные](child-no-return.md)
 - [useRef не обновляет экран](useref-no-rerender.md)
@@ -18,3 +20,9 @@
 - [Zustand: весь стор](zustand-select-all.md)
 - [Query data в Zustand](query-into-zustand.md)
 - [Модульный синглтон](module-singleton.md)
+
+## Трек 1b
+
+- [Error Boundary: пределы](error-boundary-limits.md)
+- [WebSocket и stale closure](ws-stale-closure.md)
+- [Роль в рендере](role-in-render.md)

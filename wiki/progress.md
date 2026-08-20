@@ -1,16 +1,14 @@
 # Прогресс. React
 
-Календарные дни в [plan.md](plan.md) — порядок, не обязаловка. За вечер можно закрыть пять понятных тем. Zustand можно жевать отдельно.
+Календарные дни — порядок, не обязаловка. Тема закрыта, когда без файла: дыра / как не делать / как надо.
 
-Тема закрыта, когда без файла говоришь: в чём дыра, как не делать, как надо.
+В чате: «го» / «закрыл useref» / «го финтех». После закрытия — `[x]`.
 
-В чате: «го» / «закрыл useref» / «давай zustand». После закрытия сюда ставится `[x]`.
-
-Next не начинаем, пока не закрыт блок **Ядро**.
+**Vite-финтех отклик:** ядро + трек 1b. Next не обязателен.
 
 ---
 
-## Ядро (гейт на Next)
+## Ядро (гейт на 1b и на Next)
 
 - [ ] Модель рендера: мутация `useState` молчит, нужен setter и новый объект
 - [ ] Данные вверх: колбэк / lift state, не `return` ребёнка и не `ref.getValues()`
@@ -20,7 +18,7 @@ Next не начинаем, пока не закрыт блок **Ядро**.
 
 ---
 
-## Готчи
+## Готчи ядра
 
 - [ ] [child-no-return](gotchas/child-no-return.md)
 - [ ] [useref-no-rerender](gotchas/useref-no-rerender.md)
@@ -39,9 +37,7 @@ Next не начинаем, пока не закрыт блок **Ядро**.
 
 ---
 
-## Тулзы
-
-Прочитал файл и один раз потрогал в каталоге.
+## Тулзы ядра
 
 - [ ] [vite](tools/vite.md)
 - [ ] [oxlint](tools/oxlint.md)
@@ -54,7 +50,54 @@ Next не начинаем, пока не закрыт блок **Ядро**.
 
 ---
 
-## Капстоун
+## Капстоун ядра
 
 - [ ] Каталог: список, фильтры в URL, пагинация, деталка, create/edit
 - [ ] Без шпаргалки: Zustand vs Query, зачем `key`, данные вверх
+
+---
+
+## Трек 1b — финтех ([plan-fintech.md](plan-fintech.md))
+
+Карта вакансии: [vacancies/cfa-admin-console.md](vacancies/cfa-admin-console.md).
+
+### Готчи 1b
+
+- [ ] [error-boundary-limits](gotchas/error-boundary-limits.md)
+- [ ] [ws-stale-closure](gotchas/ws-stale-closure.md)
+- [ ] [role-in-render](gotchas/role-in-render.md)
+
+### Тулзы 1b
+
+- [ ] [tailwind](tools/tailwind.md)
+- [ ] [error-boundary-suspense](tools/error-boundary-suspense.md)
+- [ ] [recharts](tools/recharts.md)
+- [ ] [websocket](tools/websocket.md)
+- [ ] [rbac-ui](tools/rbac-ui.md)
+- [ ] [storybook](tools/storybook.md)
+- [ ] [interview-tests](tools/interview-tests.md) — прочитать, код тестов не пишем
+
+### Чек 1b
+
+- [ ] Смена A: Tailwind + Error Boundary + Suspense
+- [ ] Смена B: Recharts + WS-мок с cleanup
+- [ ] Смена C: роли UI + многошаговая форма + Storybook
+- [ ] README готов к отклику «SWE Frontend»
+
+---
+
+## Готово к Vite-финтех отклику
+
+- [ ] Ядро + 1b закрыты
+- [ ] Репо запушен, скрины / Storybook demo на месте
+- [ ] Формулировка в отклике честная (Vue коммерция + этот демо)
+
+---
+
+## Next (опционально)
+
+Не блокер для ЦФА/Vite-вакансий. Когда понадобится — [`../02-next/wiki/`](../02-next/wiki/).
+
+- [ ] Ядро закрыто (обязательно)
+- [ ] 1b желательно закрыт
+- [ ] Старт App Router по next-плану

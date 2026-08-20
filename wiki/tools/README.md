@@ -4,6 +4,8 @@
 
 Закрыл — тик в [progress.md](../progress.md).
 
+## Ядро
+
 1. [Vite](vite.md)
 2. [oxlint](oxlint.md)
 3. [React Router](react-router.md)
@@ -13,4 +15,14 @@
 7. [Zod](zod.md)
 8. [CSS Modules](css-modules.md)
 
-React как библиотека — [plan](../plan.md) и [gotchas](../gotchas/). FSD — кусок плана, не пакет. Next — [`../../02-next/wiki/tools/`](../../02-next/wiki/tools/).
+## Трек 1b (после ядра)
+
+9. [Tailwind](tailwind.md)
+10. [Error Boundary / Suspense](error-boundary-suspense.md)
+11. [Recharts](recharts.md)
+12. [WebSocket](websocket.md)
+13. [RBAC UI](rbac-ui.md)
+14. [Storybook](storybook.md)
+15. [Тесты на собесе](interview-tests.md) — без кода в репо
+
+React как библиотека — [plan](../plan.md) и [gotchas](../gotchas/). Финтех-план — [plan-fintech](../plan-fintech.md). Next — [`../../02-next/wiki/tools/`](../../02-next/wiki/tools/).
