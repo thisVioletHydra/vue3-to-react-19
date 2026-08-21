@@ -1,4 +1,9 @@
-// PAGE: форма входа. Роут: /login. Родительский layout: AuthLayout.
+// Экран /login. Рамка: AuthLayout. Почему page — это URL, не «кусок формы как действие».
+//
+// EXPORT default. React.lazy ждёт module.default. Два пути — оба рабочие:
+//   А) lazy(() => import("./LoginPage"))
+//   Б) lazy(() => import("…/pages/login").then((m) => ({ default: m.LoginPage })))
+// Имя файла / URL на split не влияют. Миф «назови Login иначе сломается» — миф.
 //
 // Vue мозг → React:
 //   v-model="login"     → value={login} + onChange={(e) => setLogin(e.target.value)}

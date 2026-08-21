@@ -1,5 +1,8 @@
+// EXPORT: named. Feature UI — не page, default под lazy не обязателен.
+
 import { useState } from "react";
-import type { Product } from "../data/mockProducts";
+
+import type { Product } from "../../../entities/product";
 
 type AddProductFormProps = {
   onAdd: (product: Omit<Product, "id">) => void;

@@ -1,3 +1,5 @@
+// EXPORT: named.
+
 type SearchFieldProps = {
   value: string;
   onChange: (value: string) => void;

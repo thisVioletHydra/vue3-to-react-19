@@ -1,5 +1,9 @@
+// EXPORT: named (не default). Карточка — entity UI, в lazy страницы не целиком.
+
 import type { ReactNode } from "react";
-import type { Product } from "../data/mockProducts";
+
+import type { Product } from "../model/mockProducts";
+
 import styles from "./ProductCard.module.css";
 
 type ProductCardProps = {

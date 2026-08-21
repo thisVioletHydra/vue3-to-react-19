@@ -1,9 +1,16 @@
+// FSD: app — сборка приложения (роутер, layout'ы, провайдеры).
+// Сейчас тут ещё каталог дня 1 — временно. Цель: каталог → pages/catalog, здесь Outlet.
+//
+// EXPORT App: default ок (точка входа / корневой element роутера).
+// Фичи/entities ниже — только named через их public API (index.ts).
+
 import { useState } from "react";
-import { AddProductForm } from "./components/AddProductForm";
-import { SearchField } from "./components/SearchField";
-import { MOCK_PRODUCTS, type Product } from "./data/mockProducts";
+
+import { MOCK_PRODUCTS, ProductCard, type Product } from "../entities/product";
+import { AddProductForm } from "../features/add-product";
+import { SearchField } from "../features/search-products";
+
 import styles from "./App.module.css";
-import { ProductCard } from "./components/ProductCard";
 
 function createId(): string {
   return `p-${Date.now()}-${Math.random().toString(16).slice(2, 8)}`;

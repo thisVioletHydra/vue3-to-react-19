@@ -1,0 +1,27 @@
+{
+  "eslint.enable": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "never",
+      "source.organizeImports": "never",
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.oxc": "always"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "never",
+      "source.organizeImports": "never",
+      "source.fixAll": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.oxc": "always"
+    }
+  }
+}
