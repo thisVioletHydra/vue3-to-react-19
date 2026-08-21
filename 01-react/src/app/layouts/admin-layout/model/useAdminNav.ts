@@ -19,10 +19,18 @@
 //   const { items } = useAdminNav()
 //   <AdminNav items={items} />
 
-export function useAdminNav() {
-  // const items = [ { to: routes.adminPanel, label: "Каталог", end: true }, … ]
+import { routes } from "#/app/routes";
 
-  return {
-    items: [] as { to: string; label: string; end: boolean }[],
-  };
+export function useAdminNav() {
+  const NAV  = [
+  { to: routes.adminPanel, label: "Каталог", end: true },
+  { to: routes.adminUsers, label: "Юзеры", end: false },
+  { to: routes.adminTables, label: "Таблицы", end: false },
+  { to: routes.adminCharts, label: "Чарты", end: false },
+  { to: routes.adminSettings, label: "Настройки", end: false },
+  { to: routes.adminKit, label: "Песочница", end: false },
+  { to: routes.adminMemo, label: "Мемо", end: false },
+] as const;
+
+  return { NAV };
 }

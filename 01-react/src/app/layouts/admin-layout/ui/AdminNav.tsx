@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 import styles from "./AdminLayout.module.css";
 
 // Это КОМПОНЕНТ (= Vue SFC), не composable.
@@ -22,9 +24,27 @@ import styles from "./AdminLayout.module.css";
 // В конце layout: <AdminNav items={…} /> вместо текущего <nav>.
 
 type AdminNavProps = {
-  // items: { to: string; label: string; end: boolean }[];
+  list: readonly { to: string; label: string; end: boolean }[];
 };
 
-export function AdminNav(_props: AdminNavProps) {
-  return null;
+export function AdminNav({ list }: AdminNavProps) {
+  return (
+    <nav className={styles.nav}>
+      <ul className={styles.list}>
+        {list.map((f) => (
+          <li key={f.to}>
+            <NavLink
+              to={f.to}
+              end={f.end}
+              className={({ isActive }) => {
+                return isActive ? `${styles.link} ${styles.active}` : styles.link;
+              }}
+            >
+              {f.label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }

@@ -1,44 +1,24 @@
-import { NavLink, Outlet, useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 
 import { session } from "#/app/guards/Session";
+import { useAdminNav } from "#/app/layouts/admin-layout/model/useAdminNav";
 import { routes } from "#/app/routes";
 
 import styles from "./AdminLayout.module.css";
-
-const NAV = [
-  { to: routes.adminPanel, label: "Каталог", end: true },
-  { to: routes.adminUsers, label: "Юзеры", end: false },
-  { to: routes.adminTables, label: "Таблицы", end: false },
-  { to: routes.adminCharts, label: "Чарты", end: false },
-  { to: routes.adminSettings, label: "Настройки", end: false },
-  { to: routes.adminKit, label: "Песочница", end: false },
-] as const;
+import { AdminNav } from "./AdminNav";
 
 export function AdminLayout() {
   const navigate = useNavigate();
+  const { NAV } = useAdminNav();
 
   return (
     <div className={styles.shell}>
       <aside className={styles.sidebar}>
         <p className={styles.brand}>Админка</p>
         <hr className={styles.line} />
-        <nav className={styles.nav}>
-          <ul className={styles.list}>
-            {NAV.map((item) => (
-              <li key={item.to}>
-                <NavLink
-                  to={item.to}
-                  end={item.end}
-                  className={({ isActive }) => {
-                    return isActive ? `${styles.link} ${styles.active}` : styles.link;
-                  }}
-                >
-                  {item.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+
+        <AdminNav list={NAV} />
+
         <button
           type="button"
           className={styles.logout}

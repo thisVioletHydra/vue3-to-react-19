@@ -1,0 +1,96 @@
+.page {
+  display: grid;
+  gap: 1rem;
+  padding: 0.25rem 0 2rem;
+  border-radius: 8px;
+}
+
+.page[data-theme="dark"] {
+  background: #d8dde6;
+}
+
+.lead,
+.when p {
+  margin: 0.35rem 0 0;
+  color: #4a5160;
+}
+
+.rules {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.controls input {
+  flex: 1;
+  min-width: 16rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #c5cad3;
+  border-radius: 6px;
+}
+
+.controls button,
+.list button {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #2f3a4a;
+  border-radius: 6px;
+  background: #2f3a4a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.table {
+  padding: 1rem;
+  border: 1px solid #d0d4dc;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.frozen {
+  border-color: #3ecf8e;
+}
+
+.badge {
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.when h2 {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+}
+
+.sleep {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #1a2230;
+  color: #e8eef7;
+}

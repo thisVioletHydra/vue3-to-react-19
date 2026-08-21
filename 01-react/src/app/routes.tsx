@@ -7,5 +7,6 @@ export const routes = {
   adminCharts: "/main/charts",
   adminSettings: "/main/settings",
   adminKit: "/main/sandbox",
+  adminMemo: "/main/memo",
   all: "*",
 } as const;

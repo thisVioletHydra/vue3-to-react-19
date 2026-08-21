@@ -60,7 +60,9 @@ import { routes } from "#/app/routes";
 import { CatalogPage } from "#/pages/catalog";
 import { ChartsPage } from "#/pages/charts";
 import { LoginPage } from "#/pages/login";
+import { MemoPage } from "#/pages/memo";
 import { NotFoundPage } from "#/pages/not-found";
+import { SandboxPage } from "#/pages/sandbox";
 import { SettingsPage } from "#/pages/settings";
 import { TablesPage } from "#/pages/tables";
 import { UsersPage } from "#/pages/users";
@@ -87,6 +89,8 @@ export const router = createBrowserRouter([
           { path: "tables", element: <TablesPage /> },
           { path: "charts", element: <ChartsPage /> },
           { path: "settings", element: <SettingsPage /> },
+          { path: "sandbox", element: <SandboxPage /> },
+          { path: "memo", element: <MemoPage /> },
         ],
       },
     ],
