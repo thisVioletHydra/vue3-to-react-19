@@ -19,46 +19,72 @@
 // НЕ делай тут сайдбар / каталог / 404 — это другие файлы.
 
 import { useState } from "react";
+import { useNavigate } from "react-router";
+
+import { session } from "#/app/guards/Session";
+import { routes } from "#/app/routes";
 // когда поставишь react-router — раскомментируй:
 // import { useNavigate } from "react-router";
+import styles from "./LoginPage.module.css";
 
 export default function LoginPage() {
-  const [login, setLogin] = useState("");
+  const [login, setLogin] = useState("admin");
   const [password, setPassword] = useState("");
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+
+  async function fakeLogin(login: string, pass: string) {
+    await new Promise((resolve) => setTimeout(resolve, 400));
+    const state = login === "admin" && pass === "123123";
+
+    return { ok: Boolean(state) };
+  }
 
   return (
     <form
-      onSubmit={(event) => {
+      className={styles.card}
+      onSubmit={async (event) => {
         event.preventDefault();
+        const result = await fakeLogin(login, password);
+        if (result.ok === false) {
+          console.log("false");
 
-        // TODO: проверка «не пусто»
-        // TODO: localStorage.setItem("auth", "1") — простая «сессия»
-        // TODO: navigate("/catalog")
-        // пока можно console.log(login, password) чтобы увидеть, что submit живой
+          return;
+        }
 
-        setLogin("");
-        setPassword("");
+        session.set();
+        console.log("OK", "REDIRECT");
+        await new Promise((resolve) => setTimeout(resolve, 400));
+        navigate(routes.adminPanel);
       }}
     >
-      <label htmlFor="input-login">Login</label>
-      <input
-        type="text"
-        name="login"
-        id="input-login"
-        value={login}
-        onChange={(event) => {
-          setLogin(event.target.value);
-        }}
-      />
+      <div>
+        <h3 className={styles.h3}>Auth</h3>
+        <div className={styles.fields}>
+          <div className={styles.group}>
+            <label htmlFor="input-login">логин </label>
+            <input
+              type="text"
+              name="login"
+              id="input-login"
+              value={login}
+              onChange={(event) => setLogin(event.target.value)}
+            />
+          </div>
 
-      {/* TODO: такой же блок для password:
-          label + input type="password"
-          value={password}
-          onChange → setPassword
-      */}
+          <div className={styles.group}>
+            <label htmlFor="input-password">password</label>
+            <input
+              type="text"
+              name="password"
+              id="input-password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+          </div>
+        </div>
+      </div>
 
-      {/* TODO: <button type="submit">Войти</button> */}
+      <button type="submit">Войти</button>
     </form>
   );
 }

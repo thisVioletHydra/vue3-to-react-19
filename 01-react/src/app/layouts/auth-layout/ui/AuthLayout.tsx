@@ -10,13 +10,14 @@
 // Роутер уже стоит. Раскомментируй Outlet, когда повесишь children в router.tsx:
 //   path: "login", element: <AuthLayout />, children: [{ index: true, element: <LoginPage /> }]
 
-// import { Outlet } from "react-router";
+import { Outlet } from "react-router";
+
+import styles from "./AuthLayout.module.css";
 
 export function AuthLayout() {
   return (
-    <main>
-      {/* TODO: <Outlet /> */}
-      сюда потом Outlet
+    <main className={`${styles.screen} ${styles.background}`}>
+      <Outlet />
     </main>
   );
 }

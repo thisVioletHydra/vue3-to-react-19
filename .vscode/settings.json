@@ -23,5 +23,10 @@
       "source.fixAll.eslint": "never",
       "source.fixAll.oxc": "always"
     }
+  },
+  "[css]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
   }
 }

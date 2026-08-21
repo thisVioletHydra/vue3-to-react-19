@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import type { Product } from "../../../entities/product";
+import type { Product } from "#/entities/product";
 
 type AddProductFormProps = {
   onAdd: (product: Omit<Product, "id">) => void;

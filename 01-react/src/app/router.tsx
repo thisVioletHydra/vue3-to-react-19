@@ -52,25 +52,47 @@
 
 import { createBrowserRouter } from "react-router";
 
-import App from "./App";
-import { AdminLayout } from "./layouts/admin-layout";
-import { AuthLayout } from "./layouts/auth-layout";
-import { NotFoundPage } from "../pages/not-found";
+import { RequireAuth } from "#/app/guards/RequireAuth";
+import { RootRedirect } from "#/app/guards/RootRedirect";
+import { AdminLayout } from "#/app/layouts/admin-layout";
+import { AuthLayout } from "#/app/layouts/auth-layout";
+import { routes } from "#/app/routes";
+import { CatalogPage } from "#/pages/catalog";
+import { ChartsPage } from "#/pages/charts";
+import { LoginPage } from "#/pages/login";
+import { NotFoundPage } from "#/pages/not-found";
+import { SettingsPage } from "#/pages/settings";
+import { TablesPage } from "#/pages/tables";
+import { UsersPage } from "#/pages/users";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    errorElement: <NotFoundPage />,
+    path: routes.root,
+    element: <RootRedirect />,
+  },
+  {
+    path: routes.login,
+    element: <AuthLayout />,
+    children: [{ index: true, element: <LoginPage /> }],
+  },
+  {
+    path: routes.adminPanel,
+    element: <RequireAuth />,
     children: [
       {
-        path: "auth",
-        element: <AuthLayout />,
-      },
-      {
-        path: "admin",
         element: <AdminLayout />,
+        children: [
+          { index: true, element: <CatalogPage /> },
+          { path: "users", element: <UsersPage /> },
+          { path: "tables", element: <TablesPage /> },
+          { path: "charts", element: <ChartsPage /> },
+          { path: "settings", element: <SettingsPage /> },
+        ],
       },
     ],
+  },
+  {
+    path: routes.all,
+    element: <NotFoundPage />,
   },
 ]);

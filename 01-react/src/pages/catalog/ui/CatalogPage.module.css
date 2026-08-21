@@ -1,7 +1,4 @@
-.main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5rem;
+.page {
   display: grid;
   gap: 1.25rem;
 }
@@ -31,19 +28,19 @@
   color: #6b7280;
 }
 
-.main label {
+.page label {
   display: grid;
   gap: 0.25rem;
   font-size: 0.9rem;
 }
 
-.main input {
+.page input {
   padding: 0.45rem 0.6rem;
   border: 1px solid #c5cad3;
   border-radius: 6px;
 }
 
-.main form {
+.page form {
   display: grid;
   gap: 0.75rem;
   padding: 1rem;
@@ -51,12 +48,12 @@
   border-radius: 8px;
 }
 
-.main form h2 {
+.page form h2 {
   margin: 0;
   font-size: 1rem;
 }
 
-.main form button {
+.page form button {
   justify-self: start;
   padding: 0.45rem 0.8rem;
   border-radius: 6px;

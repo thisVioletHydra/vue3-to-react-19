@@ -1,8 +1,10 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { patchCssModules } from "vite-css-modules";
 
-// https://vite.dev/config/
+const srcDir = fileURLToPath(new URL("./src", import.meta.url));
+
 export default defineConfig({
   plugins: [
     patchCssModules({
@@ -11,6 +13,11 @@ export default defineConfig({
     }),
     react(),
   ],
+  resolve: {
+    alias: {
+      "#": srcDir,
+    },
+  },
   server: {
     // При pnpm dev сам откроет браузер (обычно Chrome, если он дефолт на Маке)
     open: true,

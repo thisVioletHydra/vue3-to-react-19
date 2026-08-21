@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.0"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
@@ -28,5 +29,8 @@
     "vite": "^8.2.0",
     "vite-css-modules": "^1.16.0"
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@11.22.0",
+  "imports": {
+    "#/*": "./src/*"
+  }
 }
